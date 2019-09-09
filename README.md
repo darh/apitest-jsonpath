@@ -59,7 +59,7 @@ apitest.New().
 	Handler(handler).
 	Get("/articles?category=golang").
 	Expect(t).
-	Assert(jsonpath.Len(`$.items`, 3).
+	Assert(jsonpath.Len(`$.items`, 3)).
 	End()
 ```
 
